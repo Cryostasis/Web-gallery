@@ -1,0 +1,17 @@
+body {
+	position: relative;
+}
+
+.main {
+	margin: 0 auto;
+	width: 720px;
+}
+
+.image {
+	display: inline-block;
+	border: 3px solid rgb(0, 128, 128);
+	margin: 10px;
+	background: rgb(0, 255 ,0);
+	width: 160px;
+	height: 90px;
+}
