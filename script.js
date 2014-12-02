@@ -105,6 +105,16 @@ big_click = function(elem)
 	timer_down = setInterval(cycle_down, TICK);
 }
 
+mouse_enter = function(elem)
+{
+	elem.target.style.border = "3px solid rgb(128, 0, 128)";
+}
+
+mouse_leave = function(elem)
+{
+	elem.target.style.border = "3px solid rgb(0, 128, 128)";
+}
+
 window.onscroll = function() 
 {
 	console.clear();
@@ -121,6 +131,9 @@ window.onscroll = function()
 		{
 			divs[i] = document.createElement("div");
 			divs[i].className = "imageDiv";
+			divs[i].onmouseenter = mouse_enter;
+			divs[i].onmouseleave = mouse_leave;
+
 			Main.appendChild(divs[i]);
 
 			images[i] = document.createElement("img");
